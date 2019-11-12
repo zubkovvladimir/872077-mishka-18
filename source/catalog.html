@@ -6,15 +6,15 @@
   </head>
   <body>
     <header class="page-header">
-      <a>
+      <a href="index.html">
         <img class="page-header__logo-image" src="" alt="Магазин Мишка" width="86" height="35">
       </a>
-      <button class="menu__toggle" type="button">Открыть меню</button>
       <nav class="menu">
+        <button class="menu__toggle" type="button">Открыть меню</button>
         <ul class="menu__list">
-          <li class="menu__item"><a href="#" class="menu__link">Каталог товаров</a></li>
-          <li class="menu__item"><a href="#" class="menu__link">Вязание на заказ</a></li>
-          <li class="menu__item"><a class="menu__link">Поиск по сайту</a></li>
+          <li class="menu__item"><a class="menu__link">Каталог товаров</a></li>
+          <li class="menu__item"><a href="form.html" class="menu__link">Вязание на заказ</a></li>
+          <li class="menu__item"><a href="#" class="menu__link">Поиск по сайту</a></li>
           <li class="menu__item"><a href="#" class="menu__link">Корзина: пока пуста</a></li>
         </ul>
       </nav>
@@ -28,17 +28,17 @@
         <ul class="goods__list">
           <li class="goods__item">
             <img src="" alt="Зайчик-попрыгайчик" class="goods__img" width="260" height="195">
-            <h3 class="goods__title">Зайчик-попрыгайчик</h3>
+            <h3 class="goods__title"><a href="#">Зайчик-попрыгайчик</a></h3>
             <p class="goods__description">Рост 30 см, вес 200 г</p>
           </li>
           <li class="goods__item">
             <img src="" alt="" class="goods__img" width="260" height="195">
-            <h3 class="goods__title">Корзинка для белья</h3>
+            <h3 class="goods__title"><a href="#">Корзинка для белья</a></h3>
             <p class="goods__description">Диаметр 15см, высота 10см</p>
           </li>
           <li class="goods__item">
             <img src="" alt="" class="goods__img" width="260" height="195">
-            <h3 class="goods__title">Большая корзинкаv  для игрушек</h3>
+            <h3 class="goods__title"><a href="#">Большая корзинкаv  для игрушек</a></h3>
             <p class="goods__description">Диаметр 30см, высота 30см</p>
           </li>
         </ul>
@@ -57,18 +57,25 @@
         <li class="social__item"><a href="#" class="social__link" title="Twitter">Твиттер</a></li>
       </ul>
       <div class="copyright">Разработано
-        <a class="copyright__link" href="https://htmlacademy.ru" target="_blank">HTML Academy</a>
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">HTML Academy</a>
       </div>
     </footer>
-    <div class="modal">
+    <form class="modal" action="https://echo.htmlacademy.ru" method="POST">
       <h2 class="modal__title">Добавить в корзину</h2>
       <p class="modal__description">Выберите размер:</p>
       <ul class="modal__list">
-        <li class="modal__item"><a class="modal__link" href="#">S</a></li>
-        <li class="modal__item"><a class="modal__link" href="#">M</a></li>
-        <li class="modal__item"><a class="modal__link" href="#">L</a></li>
+        <li class="modal__item">
+          <input type="radio" class="modal__input" id="s" name="size" value="s">
+          <label for="s" class="modal__label">S</label>
+        </li>
+        <li class="modal__item">
+          <input type="radio" class="modal__input" id="m" name="size" value="m">
+          <label for="m" class="modal__label">M</label></li>
+        <li class="modal__item">
+          <input type="radio" class="modal__input" id="l" name="size" value="l">
+          <label for="l" class="modal__label">L</label></li>
       </ul>
-      <button class="modal__btn" type="button" title="Добавить в корзину">Добавить</button>
-    </div>
+      <button class="modal__btn" type="submit" title="Добавить в корзину">Добавить</button>
+    </form>
   </body>
 </html>
