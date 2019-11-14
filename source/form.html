@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Мишка</title>
+  </head>
+  <body>
+    <header class="page-header">
+      <a href="index.html">
+        <img class="page-header__logo-image" src="" alt="Магазин Мишка" width="86" height="35">
+      </a>
+      <nav class="menu">
+        <button class="menu__toggle" type="button">Открыть меню</button>
+        <ul class="menu__list">
+          <li class="menu__item"><a href="catalog.html" class="menu__link">Каталог товаров</a></li>
+          <li class="menu__item"><a class="menu__link">Вязание на заказ</a></li>
+          <li class="menu__item"><a href="#" class="menu__link">Поиск по сайту</a></li>
+          <li class="menu__item"><a href="#" class="menu__link">Корзина: пока пуста</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main class="page-main">
+      <h1 class="visually-hidden">Форма заказа вязания на заказ</h1>
+      <div class="intro">
+        <h2 class="intro__title">Вязание на заказ</h2>
+      </div>
+      <form class="form-order" action="https://echo.htmlacademy.ru" method="POST">
+        <p class="form-order__description">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
+        <fieldset class="form-order__fieldset form-order__fieldset--type">
+          <h2 class="form-order__title">Тип</h2>
+          <ul class="form-order__list">
+            <li class="form-order__item">
+              <input type="radio" class="form-order__radio" id="interior" name="order-type" checked>
+              <label for="interior" class="form-order__label"></label>
+            </li>
+            <li class="form-order__item">
+              <input type="radio" class="form-order__radio" id="kid" name="order-type">
+              <label for="kid" class="form-order__label"></label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset class="form-order__fieldset form-order__fieldset--color">
+          <h2 class="form-order__title">Цвет</h2>
+          <ul class="form-order__list">
+            <li class="form-order__item">
+              <input type="checkbox" class="form-order__checkbox" id="white" name="order-color" checked>
+              <label for="white" class="form-order__label"></label>
+            </li>
+            <li class="form-order__item">
+              <input type="checkbox" class="form-order__checkbox" id="gray" name="order-color" checked>
+              <label for="gray" class="form-order__label"></label>
+            </li>
+            <li class="form-order__item">
+              <input type="checkbox" class="form-order__checkbox" id="tiffany" name="order-color">
+              <label for="tiffany" class="form-order__label"></label>
+            </li>
+            <li class="form-order__item">
+              <input type="checkbox" class="form-order__checkbox" id="black" name="order-color">
+              <label for="black" class="form-order__label"></label>
+            </li>
+            <li class="form-order__item">
+              <input type="checkbox" class="form-order__checkbox" id="pink" name="order-color">
+              <label for="pink" class="form-order__label"></label>
+            </li>
+            <li class="form-order__item">
+              <input type="checkbox" class="form-order__checkbox" id="orange" name="order-color">
+              <label for="orange" class="form-order__label"></label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset class="form-order__fieldset form-order__fieldset--username">
+          <h2 class="form-order__title">ФИО</h2>
+          <ul class="form-order__list form-username">
+            <li class="form-username__item">
+              <input type="text" class="form-username__input" id="name" name="username" placeholder="Введите ваше имя*">
+              <label for="name" class="form-username__label">Имя:</label>
+            </li>
+            <li class="form-username__item">
+              <input type="text" class="form-username__input" id="surname" name="usersurname" placeholder="Укажите фамилию*">
+              <label for="surname" class="form-username__label">Фамилия:</label>
+            </li>
+            <li class="form-username__item">
+              <input type="text" class="form-username__input" id="patronymic" name="userpatronymic" placeholder="Отчество, если желаете">
+              <label for="patronymic" class="form-username__label">Отчество:</label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset class="form-order__fieldset form-order__fieldset--tel">
+          <h2 class="form-order__title">ТЕЛ</h2>
+          <input type="tel" class="form-order__tel" id="tel" name="tel" placeholder="+7 ХХХ ХХХ ХХ ХХ*">
+        </fieldset>
+        <fieldset class="form-order__fieldset form-order__fieldset--email">
+          <h2 class="form-order__title">E-MAIL</h2>
+          <input type="email" class="form-order__email" id="email" name="email" placeholder="Ваш Email*">
+        </fieldset>
+        <fieldset class="form-order__fieldset form-order__fieldset--textarea">
+          <h2 class="form-order__title">ДОП</h2>
+          <textarea class="form-order__textarea" name="textarea" id="wishes" cols="30" rows="10">Опишите все ваши пожелания к заказу</textarea>
+        </fieldset>
+        <p class="form-order__note">*Поля обязательны для заполнения</p>
+        <button class="form-order__btn" type="submit">Отправить заказ</button>
+      </form>
+    </main>
+    <footer class="page-footer">
+        <ul class="social">
+          <li class="social__item"><a href="#" class="social__link" title="Instagram">Инстаграм</a></li>
+          <li class="social__item"><a href="#" class="social__link" title="Facebook">Фейсбук</a></li>
+          <li class="social__item"><a href="#" class="social__link" title="Twitter">Твиттер</a></li>
+        </ul>
+        <div class="copyright">Разработано
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">HTML Academy</a>
+        </div>
+      </footer>
+      <form class="modal" action="https://echo.htmlacademy.ru" method="POST">
+        <h2 class="modal__title">Добавить в корзину</h2>
+        <p class="modal__description">Выберите размер:</p>
+        <ul class="modal__list">
+          <li class="modal__item">
+            <input type="radio" class="modal__input" id="s" name="size" value="s">
+            <label for="s" class="modal__label">S</label>
+          </li>
+          <li class="modal__item">
+            <input type="radio" class="modal__input" id="m" name="size" value="m">
+            <label for="m" class="modal__label">M</label></li>
+          <li class="modal__item">
+            <input type="radio" class="modal__input" id="l" name="size" value="l">
+            <label for="l" class="modal__label">L</label></li>
+        </ul>
+        <button class="modal__btn" type="submit" title="Добавить в корзину">Добавить</button>
+      </form>
+    </body>
+  </html>
