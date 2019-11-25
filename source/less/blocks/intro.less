@@ -1,8 +1,41 @@
 .intro {
+  background-color: #f1f1f1;
+  min-height: 177px;
+  padding-top: 75px;
+  margin-bottom: 30px;
+}
+
+.intro__title {
   font-size: 27px;
   line-height: 30px;
   font-weight: 700;
-  background-color: #f1f1f1;
-  padding-top: 74px;
-  padding-left: 42px;
+  width: 320px;
+  margin: 0 auto;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .intro {
+    margin-top: -25px;
+    background-image: url("../img/bg-zigzag-fill.svg");
+    background-repeat: repeat-x;
+    background-position: 0 100%;
+  }
+
+  .intro__title {
+    width: 768px;
+    font-size: 43px;
+    line-height: 50px;
+  }
+}
+
+@media (min-width: 1150px) {
+  .intro__title {
+    width: 1050px;
+    font-size: 53px;
+    line-height: 57px;
+  }
 }
