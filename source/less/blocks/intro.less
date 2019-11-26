@@ -17,9 +17,10 @@
   text-align: center;
 }
 
-@media (min-width: 768px) {
+@media (min-width: @tablet-width) {
   .intro {
-    margin-top: -25px;
+    margin-top: -61px;
+    border-top: 1px solid #e7e7e7;
     background-image: url("../img/bg-zigzag-fill.svg");
     background-repeat: repeat-x;
     background-position: 0 100%;
@@ -32,7 +33,11 @@
   }
 }
 
-@media (min-width: 1150px) {
+@media (min-width: @desktop-width) {
+  .intro {
+    margin-top: -80px;
+  }
+
   .intro__title {
     width: 1050px;
     font-size: 53px;
