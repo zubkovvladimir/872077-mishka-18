@@ -2,6 +2,7 @@
   font-size: 17px;
   line-height: 24px;
   font-weight: 700;
+  margin: 0 auto;
 }
 
 .menu__list {
@@ -11,9 +12,41 @@
 }
 
 .menu__link {
+  border-top: 1px solid #ececec;
+  border-bottom: 1px solid #ececec;
+  margin-bottom: -1px;
   text-decoration: none;
   color: inherit;
   display: block;
+  min-height: 79px;
+  padding-top: 26px;
+  padding-left: 23.45%;
+  position: relative;
+}
+
+.menu__link--search,
+.menu__link--basket {
+  padding-left: 23.45%;
+}
+
+.menu__link--search > svg {
+  margin-left: 10%;
+  margin-right: 6.5%;
+  margin-bottom: -7px;
+  margin-top: 9px;
+  position: absolute;
+  top: 22px;
+  left: 0;
+}
+
+.menu__link--basket svg {
+  margin-left: 9.5%;
+  margin-right: 6.5%;
+  margin-bottom: -6px;
+  margin-top: 7px;
+  position: absolute;
+  top: 22px;
+  left: 0;
 }
 
 .menu__link:hover,
@@ -53,6 +86,8 @@
   height: 20px;
   background-image: url("../img/icon-menu-close.svg");
   background-repeat: no-repeat;
+  margin-top: 29px;
+  margin-left: 20.93%;
 }
 
 .menu__toggle--close {
@@ -62,4 +97,222 @@
 
 .menu__list--close {
   display: none;
+}
+
+.menu__logo {
+  text-decoration: none;
+  margin-top: 22px;
+  margin-left: 36.25%;
+}
+
+.menu__image {
+  width: 86px;
+  height: 35px;
+}
+
+.menu__image--not-index:hover {
+  opacity: 60%;
+}
+
+.menu__image--not-index:active {
+  opacity: 30%;
+}
+
+.menu__extra {
+  .no-list();
+  display: none;
+}
+
+.menu__interactive {
+  .no-list();
+}
+
+.menu__delivery {
+  display: none;
+  font-size: 15px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #444444;
+  margin: 0;
+  padding: 0;
+}
+
+.menu__block {
+  display: flex;
+  min-height: 79px;
+}
+
+@media (min-width: 520px) {
+  .menu__logo {
+    margin-left: 42%;
+  }
+
+  .menu__link {
+    padding: 26px 15% 26px 32%;
+  }
+
+  .menu__link--search > svg,
+  .menu__link--basket > svg {
+    left: 10%;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .menu {
+    width: auto;
+    min-height: 88px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+  }
+
+  .menu__toggle {
+    display: none;
+  }
+
+  .menu__link {
+    margin-bottom: 0;
+    padding: 0;
+    border-top: 0;
+    border-bottom: 0;
+  }
+
+  .menu__link--search {
+    font-size: 0;
+    min-width: 82px;
+    border-right: 1px solid #e7e7e7;
+    border-left: 1px solid #e7e7e7;
+    border-bottom: 1px solid #e7e7e7;
+    min-height: 89px;
+  }
+
+  .menu__link--basket {
+    min-width: 315px;
+    border-bottom: 1px solid #e7e7e7;
+    min-height: 89px;
+    padding-left: 83px;
+    padding-top: 30px;
+  }
+
+
+  .menu__interactive {
+    display: flex;
+    margin-left: auto;
+  }
+
+  .menu__list {
+    order: 2;
+    font-size: 15px;
+    display: flex;
+  }
+
+  .menu__list .menu__link {
+    min-width: 167px;
+    padding-top: 17px;
+    padding-left: 48px;
+    min-height: 60px;
+  }
+
+  .menu__list .menu__link--decor {
+    padding-left: 37px;
+  }
+
+  .menu__logo {
+    margin-left: 50px;
+  }
+
+  .menu__delivery {
+    display: block;
+    order: 3;
+    margin-left: auto;
+    padding-right: 50px;
+    padding-top: 17px;
+  }
+
+  .menu__image {
+    width: 112px;
+    height: 46px;
+  }
+
+  .menu__block {
+    min-width: 48.3%;
+    flex-grow: 1;
+    min-height: 89px;
+  }
+
+  .menu__link--search svg {
+    top: 28px;
+    left: 24px;
+  }
+
+  .menu__link--basket svg {
+    top: 27px;
+    left: 2px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .menu {
+    width: 1150px;
+  }
+
+  .menu__extra--hide {
+    display: block;
+  }
+
+  .menu__list {
+    order: 0;
+    font-size: 17px;
+  }
+
+  .menu__logo {
+    order: 1;
+    width: 149px;
+    height: 72px;
+    margin-top: 9px;
+    margin-left: 32px;
+  }
+
+  .menu__interactive {
+    order: 2;
+  }
+
+  .menu__extra {
+    order: 3;
+    font-size: 15px;
+    display: flex;
+  }
+
+  .menu__image {
+    width: 149px;
+    height: 72px;
+  }
+
+  .menu__block {
+    min-width: auto;
+    flex-grow: 0;
+    order: 1;
+  }
+
+  .menu__list .menu__link {
+    min-width: 234px;
+    padding-top: 31px;
+    min-height: 100%;
+    padding-left: 48px;
+  }
+
+  .menu__list .menu__link--decor {
+    padding-left: 34px;
+    border-left: 1px solid #e7e7e7;
+  }
+
+  .menu__extra .menu__link {
+    min-width: 234px;
+    padding-top: 16px;
+    padding-left: 49px;
+  }
+
+  .menu__extra .menu__link--decor {
+    padding-left: 34px;
+  }
 }

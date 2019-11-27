@@ -3,10 +3,24 @@
   border-bottom: 1px solid #c7c7c7;
 }
 
+.modal__wrapper {
+  width: 320px;
+  margin: 0 auto;
+  padding: 0 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+.modal__description,
+.modal__list {
+  align-self: center;
+}
+
 .modal__title {
   font-size: 25px;
   line-height: 30px;
   font-weight: 700;
+  text-align: center;
 }
 
 .modal__description {
@@ -17,6 +31,7 @@
 
 .modal__list {
   list-style: none;
+  display: flex;
 }
 
 .modal__label {
@@ -44,4 +59,28 @@
   background-color: #63d1bb;
   border: 2px solid #63d1bb;
   text-transform: uppercase;
+}
+
+@media (min-width: @tablet-width) {
+  .modal {
+    width: 556px;
+    height: 336px;
+    margin: 0 auto;
+    border: 1px solid #c7c7c7;
+  }
+
+  .modal__wrapper {
+    width: 556px;
+    height: 336px;
+    margin: 0 auto;
+  }
+
+  .modal__title {
+    font-size: 30px;
+    line-height: 57px;
+  }
+
+  .modal__description {
+    font-size: 17px;
+  }
 }

@@ -1,12 +1,13 @@
 .btn {
   background: none;
-  font-size: 17px;
+  font-size: 18px;
   line-height: 20px;
   font-weight: 700;
   color: #444444;
   text-decoration: none;
   border: 2px solid #444444;
   text-transform: uppercase;
+  text-align: center;
 }
 
 .btn:hover,
@@ -17,4 +18,12 @@
 
 .btn:active {
   color: rgba(255, 255, 255, 0.3);
+}
+
+@media (min-width: @tablet-width) {
+  .btn {
+    background: none;
+    font-size: 17px;
+    line-height: 20px;
+  }
 }
