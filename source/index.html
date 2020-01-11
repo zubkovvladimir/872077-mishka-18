@@ -208,24 +208,26 @@
         </div>
       </div>
     </footer>
-    <form class="modal" action="https://echo.htmlacademy.ru" method="POST">
-      <div class="modal__wrapper">
-        <h2 class="modal__title">Добавить в корзину</h2>
-        <p class="modal__description">Выберите размер:</p>
-        <ul class="modal__list">
-          <li class="modal__item">
-            <input type="radio" class="modal__input visually-hidden" id="s" name="size" value="s">
-            <label for="s" class="modal__label">S</label>
-          </li>
-          <li class="modal__item">
-            <input type="radio" class="modal__input visually-hidden" id="m" name="size" value="m">
-            <label for="m" class="modal__label">M</label></li>
-          <li class="modal__item">
-            <input type="radio" class="modal__input visually-hidden" id="l" name="size" value="l">
-            <label for="l" class="modal__label">L</label></li>
-        </ul>
-        <button class="modal__btn" type="submit" title="Добавить в корзину">Добавить</button>
-      </div>
-    </form>
+    <div class="modal">
+      <form class="modal__form" action="https://echo.htmlacademy.ru" method="POST">
+        <div class="modal__wrapper">
+          <h2 class="modal__title">Добавить в корзину</h2>
+          <p class="modal__description">Выберите размер:</p>
+          <ul class="modal__list">
+            <li class="modal__item">
+              <input type="radio" class="modal__input visually-hidden" checked id="s" name="size" value="s">
+              <label for="s" class="modal__label">S</label>
+            </li>
+            <li class="modal__item">
+              <input type="radio" class="modal__input visually-hidden" id="m" name="size" value="m">
+              <label for="m" class="modal__label">M</label></li>
+            <li class="modal__item">
+              <input type="radio" class="modal__input visually-hidden" id="l" name="size" value="l">
+              <label for="l" class="modal__label">L</label></li>
+          </ul>
+          <button class="modal__btn" type="submit" title="Добавить в корзину">Добавить</button>
+        </div>
+      </form>
+    </div>
   </body>
 </html>
