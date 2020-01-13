@@ -1,6 +1,18 @@
 .social {
   list-style: none;
   display: flex;
+  padding: 0;
+  margin-left: 57px;
+  margin-top: 32px;
+}
+
+.social__item {
+  margin-right: 31px;
+}
+
+.social__item:nth-child(2) {
+  margin-right: 24px;
+  margin-top: -5px;
 }
 
 .social__link {
@@ -17,4 +29,11 @@
 
 .social__link:active path {
   fill: rgba(70, 193, 174, 0.3);
+}
+
+@media (min-width: @tablet-width) {
+  .social {
+    margin-left: 154px;
+    margin-top: 63px;
+  }
 }

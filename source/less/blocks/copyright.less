@@ -2,6 +2,9 @@
   font-size: 19px;
   line-height: 18px;
   font-weight: 700;
+  margin-left: 37px;
+  margin-top: 32px;
+  position: relative;
 }
 
 .copyright__link {
@@ -20,8 +23,11 @@
 }
 
 .copyright__link svg {
-  width: 27px;
-  height: 34px;
+  width: 43px;
+  height: 41px;
+  position: absolute;
+  top: -10px;
+  right: 31px;
 }
 
 .copyright path {
@@ -35,4 +41,16 @@
 
 .copyright:active path {
   fill: rgba(70, 193, 174, 0.3);
+}
+
+@media (min-width: @tablet-width) {
+  .copyright {
+    margin-top: 63px;
+    margin-right: 56px;
+  }
+
+  .copyright__link svg {
+    top: -9px;
+    right: -65px;
+  }
 }

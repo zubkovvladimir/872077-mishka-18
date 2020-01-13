@@ -7,6 +7,7 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
+  margin-bottom: 5px;
 }
 
 .promo__wrapper {
@@ -102,8 +103,6 @@
   .promo::after {
     content: "";
     background-image: url("../../img/bg-zigzag-fill.svg");
-    background-repeat: repeat-x;
-    background-position-x: 50%;
     width: 100%;
     height: 20px;
     position: absolute;
@@ -116,7 +115,7 @@
 
   .promo__list {
     display: flex;
-    margin: 0 6.51%;
+    margin: 0 50px;
   }
 
   .promo__link {
@@ -127,6 +126,34 @@
     padding-left: 35px;
     padding-top: 27px;
     width: 344px;
+  }
+
+  @keyframes scaleY {
+    to {
+      transform: scaleY(1.09) translateY(-5px);
+    }
+  }
+
+  @keyframes scaleYtext {
+    to {
+      transform: scaleY(0.91) translateY(-5px);
+    }
+  }
+
+  .promo__link:hover,
+  .promo__link:focus {
+    animation: scaleY;
+    animation-duration: 0.2s;
+    animation-fill-mode: forwards;
+  }
+
+  .promo__link:hover .promo__transform,
+  .promo__link:focus .promo__transform,
+  .promo__link:hover svg,
+  .promo__link:focus svg {
+    animation: scaleYtext;
+    animation-duration: 0.2s;
+    animation-fill-mode: forwards;
   }
 
   .promo__link:last-child {
@@ -175,9 +202,9 @@
   }
 
   .promo::after {
-    bottom: -5px;
-    background-position: 11px 0;
-    background-size: auto 37px;
     height: 29px;
+    background-size: auto 37px;
+    top: 728px;
+    background-position-x: 113%;
   }
 }

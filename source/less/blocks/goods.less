@@ -1,7 +1,7 @@
 .goods {
   padding: 0 30px;
-  width: 320px;
   margin: 0 auto;
+  margin-top: 30px;
 }
 
 .goods__list {
@@ -12,12 +12,17 @@
 .goods__wrap {
   border: 1px solid #ededed;
   flex-grow: 1;
+  margin-top: -7px;
 }
 
 .goods__title {
   font-size: 17px;
   line-height: 24px;
   font-weight: 700;
+  margin-top: 27px;
+  margin-left: 27px;
+  margin-bottom: 0;
+  margin-right: 30px;
 }
 
 .goods__link {
@@ -54,12 +59,22 @@
   line-height: 30px;
   font-weight: 400;
   color: #444444;
+  margin-top: 5px;
+  margin-left: 27px;
+  margin-bottom: 19px;
 }
 
 .goods__price {
   font-size: 15px;
   line-height: 24px;
   font-weight: 700;
+  margin-top: 21px;
+  margin-bottom: 2px;
+}
+
+.goods__basket {
+  margin-top: 22px;
+  margin-left: auto;
 }
 
 .goods__item {
@@ -69,19 +84,41 @@
   margin-bottom: 30px;
 }
 
+.goods__item:hover {
+  box-shadow: 0 7px 7px 0 #ececec;
+}
+
+.goods__item:active {
+  box-shadow: 0 5px 5px 0 #ececec;
+}
+
 .goods__img {
   height: 100%;
+}
+
+.goods__price-basket-wrap {
+  display: flex;
+  margin-bottom: 25px;
+  margin-left: 27px;
+  margin-right: 27px;
+  border-top: 1px solid #ececec;
+}
+
+.goods__pictures {
+  margin: 0;
+  padding: 0;
 }
 
 @media (min-width: @tablet-width) {
   .goods {
     padding: 0 50px;
-    width: 768px;
     margin: 0 auto;
   }
 
   .goods__item {
     flex-direction: row;
+    margin-bottom: 48px;
+    align-items: stretch;
   }
 
   .goods__img {
@@ -98,6 +135,32 @@
 
   .goods__price {
     font-size: 17px;
+  }
+
+  .goods__wrap {
+    margin-top: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 334px;
+  }
+
+  .goods__title {
+    margin-top: 25px;
+    width: 240px;
+  }
+
+  .goods__price-basket-wrap {
+    margin-left: 31px;
+    margin-right: 31px;
+    margin-top: auto;
+  }
+
+  .goods__pictures {
+    height: auto;
+  }
+
+  .goods__image-link {
+    flex-basis: 50%;
   }
 }
 
@@ -121,5 +184,25 @@
 
   .goods__item:last-child {
     margin-right: 0;
+  }
+
+  .goods__wrap {
+    margin-top: -7px;
+    align-self: stretch;
+    min-height: auto;
+  }
+
+  .goods__description {
+    margin-bottom: 13px;
+  }
+
+  .goods__price-basket-wrap {
+    margin-left: 26px;
+    margin-right: 31px;
+    margin-top: auto;
+  }
+
+  .goods__img {
+    height: auto;
   }
 }
