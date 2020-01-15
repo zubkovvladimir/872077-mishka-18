@@ -340,6 +340,7 @@
 
   .form-order__fieldset-wrap {
     display: flex;
+    position: relative;
   }
 
   .form-order__fieldset--color .form-order__list {
@@ -366,6 +367,7 @@
     font-size: 17px;
     line-height: 30px;
     margin-bottom: 27px;
+    margin-top: 59px;
   }
 
   .form-order__label,
@@ -509,7 +511,7 @@
 
   .form-order__fieldset--tel svg {
     top: 61px;
-    right: 76px;
+    right: 26px;
   }
 
   .form-order__email {
@@ -525,7 +527,7 @@
 
   .form-order__fieldset--email svg {
     top: 35px;
-    right: 72px;
+    right: 22px;
   }
 
   .form-order__fieldset--textarea .form-order__title {
@@ -544,12 +546,6 @@
 }
 
 @media (min-width: @desktop-width) {
-  .form-order__fieldset {
-    width: 1150px;
-    margin: 0 auto;
-    padding: 0 50px;
-  }
-
   .form-order__description {
     width: 800px;
   }
@@ -595,7 +591,7 @@
   }
 
   .form-order__fieldset--tel svg {
-    right: 233px;
+    right: 183px;
   }
 
   .form-order__fieldset--email .form-order__title {
@@ -609,7 +605,7 @@
   }
 
   .form-order__fieldset--email svg {
-    right: 229px;
+    right: 179px;
   }
 
   .form-order__fieldset--email {
@@ -630,4 +626,16 @@
     margin-top: 61px;
     margin-right: 58px;
   }
+
+  .form-order__fieldset-wrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 1050px;
+    margin: 0 auto;
+  }
+
+  .form-order__description {
+    margin-top: 106px;
+}
 }
