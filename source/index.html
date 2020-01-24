@@ -3,12 +3,12 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Мишка</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
   <body>
     <div style="display: none;">
-      <include src="source/img/sprite.svg"></include>
+      <include src="build/img/sprite.svg"></include>
     </div>
     <header class="page-header">
       <nav class="menu menu--nojs">
@@ -29,12 +29,12 @@
         <ul class="menu__interactive">
           <li class="menu__item"><a href="#" class="menu__link menu__link--search">
             <svg width="17" height="17">
-              <use xlink:href="#search"></use>
+              <use xlink:href="#icon-search"></use>
             </svg>
             Поиск по сайту</a></li>
           <li class="menu__item"><a href="#" class="menu__link menu__link--basket">
             <svg width="20" height="18">
-              <use xlink:href="#basket"></use>
+              <use xlink:href="#icon-cart"></use>
             </svg>
             Корзина: пока пуста</a></li>
         </ul>
@@ -58,12 +58,12 @@
           <a class="promo__link" href="#">
           <div class="promo__transform">Предметы интерьера</div>
           <svg width="40" height="62">
-            <use xlink:href="#interior"></use>
+            <use xlink:href="#icon-interior"></use>
           </svg></a>
           <a class="promo__link" href="#">
             <div class="promo__transform">Детские игрушки</div>
             <svg width="60" height="59">
-              <use xlink:href="#kid"></use>
+              <use xlink:href="#icon-toy"></use>
             </svg></a>
         </div>
       </section>
@@ -130,11 +130,11 @@
                 <div class="reviews__btn-wrap">
                   <button class="reviews__btn reviews__btn-previous" type="button" title=">Предыдущий отзыв">
                     <svg width="50" height="26">
-                      <use xlink:href="#btn_previous"></use>
+                      <use xlink:href="#icon-left-arrow"></use>
                     </svg>Предыдущий отзыв</button>
                   <button class="reviews__btn reviews__btn-next" type="button" title="Следующий отзыв">
                     <svg width="50" height="26">
-                      <use xlink:href="#btn_next"></use>
+                      <use xlink:href="#icon-right-arrow"></use>
                     </svg>Следующий отзыв</button>
                 </div>
               </div>
@@ -163,28 +163,28 @@
       <div class="footer__wrapper">
         <a class="footer__logo">
           <svg width="101" height="34">
-            <use xlink:href="#footer_logo"></use>
+            <use xlink:href="#logo-footer"></use>
           </svg>
         </a>
         <ul class="social">
           <li class="social__item"><a href="#" class="social__link social__link---inst" title="Instagram">
             <svg width="21" height="21">
-              <use xlink:href="#instagram"></use>
+              <use xlink:href="#icon-insta"></use>
             </svg>Инстаграм</a></li>
           <li class="social__item"><a href="#" class="social__link social__link--fb" title="Facebook">
             <svg width="14" height="27">
-              <use xlink:href="#facebook"></use>
+              <use xlink:href="#icon-fb"></use>
             </svg>Фейсбук</a></li>
           <li class="social__item"><a href="#" class="social__link social__link--tw" title="Twitter">
             <svg width="23" height="20">
-              <use xlink:href="#twitter"></use>
+              <use xlink:href="#icon-twitter"></use>
             </svg>
               Твиттер</a></li>
         </ul>
         <div class="copyright">
           <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">Разработано
             <svg width="120" height="120">
-              <use xlink:href="#htmlacademy"></use>
+              <use xlink:href="#logo-htmlacademy"></use>
             </svg></a>
         </div>
       </div>
