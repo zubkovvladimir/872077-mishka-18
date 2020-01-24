@@ -13,8 +13,7 @@
   background-color: #ffffff;
 }
 
-.menu__link,
-.promo__extra-link {
+.menu__link {
   border-top: 1px solid #ececec;
   border-bottom: 1px solid #ececec;
   margin-bottom: -1px;
@@ -56,14 +55,11 @@
 }
 
 .menu__link:hover,
-.menu__link:focus,
-.promo__extra-link:hover,
-.promo__extra-link:focus {
+.menu__link:focus {
   color: rgba(0, 0, 0, 0.6);
 }
 
-.menu__link:active,
-.promo__extra-link:active {
+.menu__link:active {
   color: rgba(0, 0, 0, 0.3);
 }
 
@@ -125,11 +121,6 @@
   opacity: 30%;
 }
 
-.promo__extra-list {
-  .no-list();
-  display: none;
-}
-
 .menu__interactive {
   .no-list();
   background-color: #ffffff;
@@ -149,16 +140,6 @@
   display: block;
 }
 
-.menu__delivery {
-  display: none;
-  font-size: 15px;
-  line-height: 24px;
-  font-weight: 400;
-  color: #444444;
-  margin: 0;
-  padding: 0;
-}
-
 .menu__block {
   display: flex;
   min-height: 79px;
@@ -173,8 +154,7 @@
     margin-left: 42%;
   }
 
-  .menu__link,
-  .promo__extra-link {
+  .menu__link {
     padding: 26px 15% 26px 32%;
   }
 
@@ -202,8 +182,7 @@
     display: none;
   }
 
-  .menu__link,
-  .promo__extra-link {
+  .menu__link {
     margin-bottom: 0;
     padding: 0;
     border-top: 0;
@@ -267,16 +246,6 @@
     margin-left: 50px;
   }
 
-  .menu__delivery {
-    display: block;
-    order: 3;
-    margin-left: auto;
-    padding-top: 16px;
-    padding-right: 48px;
-    z-index: 1;
-    width: 281px;
-  }
-
   .menu__image {
     width: 112px;
     height: 46px;
@@ -304,10 +273,6 @@
     width: 1150px;
   }
 
-  .promo__extra-list--hide {
-    display: block;
-  }
-
   .menu__list {
     order: 0;
     font-size: 17px;
@@ -324,12 +289,6 @@
 
   .menu__interactive {
     order: 2;
-  }
-
-  .promo__extra-list {
-    order: 3;
-    font-size: 15px;
-    display: flex;
   }
 
   .menu__image {
@@ -355,33 +314,11 @@
     border-left: 1px solid #e7e7e7;
   }
 
-  .promo__extra-list .promo__extra-link {
-    padding-top: 16px;
-    padding-right: 43px;
-    width: 201px;
-    font-weight: 700;
-    text-align: start;
-  }
-
-  .promo__extra-list .promo__extra-item {
-    width: 185px;
-  }
-
-  .promo__extra-list .promo__extra-link--decor {
-    padding-left: 34px;
-    text-align: left;
-  }
-
   .menu__link--basket {
     min-width: 317px;
   }
 
   .menu__link--search {
     min-width: 84px;
-  }
-
-  .menu__delivery {
-    padding-right: 0;
-    text-align: right;
   }
 }
