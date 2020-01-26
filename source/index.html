@@ -3,6 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Мишка</title>
+    <link rel="preload" href="fonts/opensans.woff2" as="font">
+    <link rel="preload" href="fonts/opensansbold.woff2" as="font">
     <link rel="stylesheet" href="css/style.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
@@ -45,12 +47,12 @@
       <section class="promo">
         <div class="promo__wrapper">
           <h2 class="visually-hidden">Промо магазина</h2>
-          <div class="promo__extra">
-            <ul class="menu__extra menu__extra--hide">
-              <li class="menu__item"><a class="menu__link" href="#">Новые поступления</a></li>
-              <li class="menu__item"><a class="menu__link menu__link--decor" href="#">Распродажа</a></li>
+          <div class="extra-menu">
+            <ul class="extra-menu__list extra-menu__list--hidden">
+              <li class="extra-menu__item"><a class="extra-menu__link" href="#">Новые поступления</a></li>
+              <li class="extra-menu__item"><a class="extra-menu__link extra-menu__link--decor" href="#">Распродажа</a></li>
             </ul>
-            <p class="menu__delivery">Бесплатная доставка по России</p>
+            <p class="extra-menu__delivery">Бесплатная доставка по России</p>
           </div>
           <b class="promo__description">Милые штуки ручной<br> работы для дома</b>
         </div>
@@ -87,6 +89,9 @@
               </tr>
             </table>
             <picture class="product-week__pic">
+              <source type="image/webp" media="(min-width: 1200px)" srcset="img/triple-set-desktop@1x.webp 1x, img/triple-set-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/triple-set-tablet@1x.webp 1x, img/triple-set-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/triple-set-mobile@1x.webp 1x, img/triple-set-mobile@2x.webp 2x">
               <source media="(min-width:1150px)" srcset="img/triple-set-desktop@1x.jpg, img/triple-set-desktop@2x.jpg 2x">
               <source media="(min-width:768px)" srcset="img/triple-set-tablet@1x.jpg, img/triple-set-tablet@2x.jpg 2x">
               <img class="product-week__img" src="img/triple-set-mobile@1x.jpg" srcset="img/triple-set-mobile@2x.jpg 2x" alt="Фото товара" width="260" height="315">
