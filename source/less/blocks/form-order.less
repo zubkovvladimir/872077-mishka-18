@@ -36,14 +36,16 @@
   margin-top: 22px;
 }
 
-.form-order__label,
-.form-username__label {
+.form-order__label {
   font-size: 17px;
   line-height: 18px;
   font-weight: 700;
+  position: relative;
+  display: block;
+  padding-left: 63px;
+  padding-top: 19px;
 }
 
-.form-username__input,
 .form-order__tel,
 .form-order__email,
 .form-order__textarea {
@@ -79,7 +81,6 @@
   width: 100%;
 }
 
-.form-username__input::placeholder,
 .form-order__email::placeholder,
 .form-order__textarea::placeholder {
   font-size: 17px;
@@ -116,13 +117,6 @@
   display: flex;
   flex-direction: column;
   margin-bottom: 53px;
-}
-
-.form-order__label {
-  position: relative;
-  display: block;
-  padding-left: 63px;
-  padding-top: 19px;
 }
 
 .form-order__label::before {
@@ -168,10 +162,10 @@
 .form-order__checkbox:checked ~ .form-order__label::after {
   content: "";
   width: 32px;
-  height: 22px;
+  height: 15px;
   position: absolute;
-  top: 20px;
-  left: 9px;
+  top: 23px;
+  left: 8px;
   background-image: url("../img/icon-tick.svg");
   background-repeat: no-repeat;
   background-size: 23px 100%;
@@ -191,25 +185,10 @@
   margin-bottom: 9px;
 }
 
-.form-username__label {
-  display: flex;
-}
-
-.form-username__input {
-  padding-top: 15px;
-  padding-bottom: 16px;
-  width: 100%;
-}
-
-.form-username__input,
 .form-order__tel,
 .form-order__email {
   border-bottom: 2px solid #000000;
   margin-bottom: 23px;
-}
-
-.form-username {
-  padding-top: 16px;
 }
 
 .form-order__fieldset--tel {
@@ -222,9 +201,6 @@
   position: relative;
 }
 
-.form-username__input:hover,
-.form-username__input:active,
-.form-username__input:focus,
 .form-order__tel:active,
 .form-order__email:active,
 .form-order__tel:hover,
@@ -365,8 +341,6 @@
   }
 
   .form-order__label,
-  .form-username__label,
-  .form-username__input::placeholder,
   .form-order__email::placeholder,
   .form-order__textarea::placeholder {
     font-size: 19px;
@@ -444,36 +418,14 @@
 
   .form-order__checkbox:checked ~ .form-order__label::after {
     width: 41px;
-    height: 31px;
-    top: 19px;
+    height: 22px;
+    top: 23px;
     left: -7px;
     background-size: 32px 100%;
   }
 
   .form-order__fieldset--username .form-order__title {
     margin-top: 67px;
-  }
-
-  .form-username__item {
-    display: flex;
-  }
-
-  .form-username__label {
-    padding-top: 49px;
-    padding-bottom: 9px;
-    padding-left: 34px;
-  }
-
-  .form-username {
-    margin-bottom: 60px;
-    width: 100%;
-  }
-
-  .form-username__input {
-    margin-top: 36px;
-    margin-left: 24px;
-    margin-bottom: -10px;
-    padding-left: 18px;
   }
 
   .form-order__tel,
@@ -564,14 +516,6 @@
     padding-right: 230px;
   }
 
-  .form-username__label {
-    padding-left: 16px;
-  }
-
-  .form-username {
-    width: 714px;
-  }
-
   .form-order__fieldset--tel .form-order__title {
     padding-left: 61px;
   }
@@ -613,11 +557,6 @@
     width: 803px;
   }
 
-  .copyright {
-    margin-top: 61px;
-    margin-right: 58px;
-  }
-
   .form-order__fieldset-wrap {
     display: flex;
     width: 1050px;
@@ -629,5 +568,10 @@
     flex-wrap: wrap;
     padding-bottom: 76px;
     width: 800px;
+  }
+
+  .form-order__checkbox:checked ~ .form-order__label::after {
+    height: 20px;
+    top: 27px;
   }
 }
